@@ -1,0 +1,5 @@
+{
+    "dbLocal": "mongodb://localhost/devConnector",
+    "dbAtlas": "mongodb+srv://ogunsanmimichael:zRtva6FYbE8Jbb59@cluster0-fmmti.mongodb.net/test?retryWrites=true",
+    "jwtPrivateKey": ""
+}
