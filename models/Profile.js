@@ -56,7 +56,7 @@ const validateProfile = (profile) => {
     const notRequired = Joi.string().min(2).max(225)
     const url = Joi.string().uri({
         scheme: ['http', 'https']
-    }).required()
+    })
 
     const schema = {
         user: JoiObjectId().required(),

@@ -1,20 +1,15 @@
-const express = require('express')
-const router = express.Router()
 const bcrypt = require('bcrypt')
 const Joi = require('joi')
 const _ = require('lodash')
 
-const {
-    User
-} = require('../models/User')
-
-/*
+module.exports = function (router, User) {
+  /*
  * @route POST /api/login
  * @desc Login route
  * @access Public
  */
+router.post('/login', async (req, res) => {
 
-router.post('/', async (req, res) => {
     const {
         error
     } = validate(req.body)
@@ -59,6 +54,6 @@ const validate = (requestBody) => {
 
     return Joi.validate(requestBody, schema)
 }
+  
+}
 
-
-module.exports = router

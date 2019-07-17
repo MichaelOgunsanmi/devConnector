@@ -12,7 +12,7 @@ module.exports = function asyncMiddleware(handler) {
 that express-async-errors doesn't work as expected. 
 hey wrap our routes in try catch blocks. 
 An implementation needed for async await code base. 
-The express-async-errors wrap our code in an imlementation 
+The express-async-errors wrap our code in an implementation 
 similar to the one above for asyncMiddleware
 
 sample implementation gives: 

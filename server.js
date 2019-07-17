@@ -2,11 +2,12 @@ const express = require('express')
 const app = express()
 const winston = require('winston')
 
+require('./startup/config')()
 require('./startup/logging')()
+require('./startup/validation')()
 require('./startup/routes')(app)
 require('./startup/db')()
-require('./startup/config')()
-require('./startup/validation')()
+
 
 
 const port = process.env.PORT || 5000 || 3300
